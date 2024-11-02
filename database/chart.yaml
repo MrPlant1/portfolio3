@@ -1,0 +1,5 @@
+apiVersion: v2
+name: db-adminer-chart
+description: Helm chart voor MySQL database met Adminer-interface en een Persistent Volume Claim
+version: 0.1.0
+appVersion: "5.7"

@@ -1,0 +1,5 @@
+apiVersion: v2
+name: apache-servers-chart
+description: Helm chart voor het uitrollen van twee Apache-webservers met verschillende configuraties
+version: 0.1.0
+appVersion: "2.4"

@@ -1,0 +1,14 @@
+replicaCount: 2
+
+image:
+  repository: bitnami/apache
+  tag: "2.4"
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 80
+
+content:
+  server1: "<h1>Content voor Apache Server 1</h1>"
+  server2: "<h1>Content voor Apache Server 2</h1>"

@@ -1,0 +1,18 @@
+namespace: database-namespace
+
+mysql:
+  image: mysql:5.7
+  database: bb_database
+  user: beheer
+  password: password
+  rootPassword: rootpassword
+  pvc:
+    storageSize: 1Gi
+
+adminer:
+  image: adminer:latest
+
+service:
+  type: ClusterIP
+  adminerPort: 8080
+  mysqlPort: 3306

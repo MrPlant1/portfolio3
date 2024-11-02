@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apache-server-1-content
+data:
+  index.html: {{ .Values.content.server1 | quote }}
+
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: apache-server-2-content
+data:
+  index.html: {{ .Values.content.server2 | quote }}
